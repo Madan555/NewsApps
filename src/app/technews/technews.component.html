@@ -1,0 +1,11 @@
+<div class="container-fluid mt-3">
+    <h4>Technology News Today <marquee behavior="" class="text-capitalize" direction="" style="color: green;">for more updates subscribe my channel </marquee> </h4>
+    <div class="row mt-3" width="90%" >
+        <div class="col-lg-3 borderLine" *ngFor="let techy of technews">
+            <img src="{{techy.urlToImage}}" alt="content-images" width="100%">
+            <h5>{{techy.content}}</h5>
+            <p>{{techy.description}}</p>
+            <a href="{{techy.url}}" class="btn btn-dark text-white text-capitalize mb-3">read more</a>
+        </div>
+    </div>
+</div>

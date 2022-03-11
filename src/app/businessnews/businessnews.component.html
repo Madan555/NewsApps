@@ -1,0 +1,11 @@
+<div class="container-fluid mt-3">
+    <h4>Business News Today <marquee behavior="" class="text-capitalize" direction="" style="color: green;">for more updates subscribe my channel </marquee> </h4>
+    <div class="row mt-3" width="90%" >
+        <div class="col-lg-3 borderLine" *ngFor="let busi of business">
+            <img src="{{busi.urlToImage}}" alt="content-images" width="100%">
+            <h5>{{busi.content}}</h5>
+            <p>{{busi.description}}</p>
+            <a href="{{busi.url}}" class="btn btn-dark text-white text-capitalize mb-3">read more</a>
+        </div>
+    </div>
+</div>
